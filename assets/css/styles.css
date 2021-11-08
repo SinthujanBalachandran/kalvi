@@ -104,6 +104,12 @@ header {
 .nav_logo {
     font-family: 'Raleway', sans-serif;
     color: #fff;
+    font-size: 2rem;
+    font-weight: 500;
+}
+
+.nav_logo span {
+    color: #04AA6D;
 }
 
 .nav_list {
@@ -117,6 +123,10 @@ header {
     color: #fff;
 }
 
+.nav_link:hover {
+    color: #04AA6D;
+}
+
 .nav_toggle,
 .nav_close {
     display: none;
@@ -124,6 +134,19 @@ header {
 
 .scroll-header {
     background-color: #fff;
+    box-shadow: 0 5px 20px rgb(0 0 0 / 5%);
+}
+
+.scroll-header .nav_link {
+    color: #000;
+}
+
+.scroll-header .nav_link:hover {
+    color: #04AA6D;
+}
+
+.scroll-header .nav_logo {
+    color: #000;
 }
 
 
