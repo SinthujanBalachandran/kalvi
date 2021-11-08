@@ -1,0 +1,412 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Raleway:wght@500;600;700&display=swap");
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+    scroll-behavior: smooth;
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+h1 {
+    font-size: calc(1.4rem + 3.5vw);
+    margin-bottom: 1rem;
+    font-family: 'Raleway', sans-serif;
+}
+
+
+/* big titles */
+
+h2 {
+    font-family: 'Raleway', sans-serif;
+    font-size: calc(1.375rem + 1.5vw);
+    margin-bottom: 2rem;
+}
+
+
+/* home interest , footer headings*/
+
+h3 {
+    font-family: 'Raleway', sans-serif;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+
+/* home small para */
+
+h4 {
+    font-size: 1.2rem;
+}
+
+
+/* small titles */
+
+h5 {
+    font-family: 'Raleway', sans-serif;
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    letter-spacing: .2rem;
+    color: #04AA6D;
+}
+
+
+/* service headings */
+
+h6 {
+    font-family: 'Raleway', sans-serif;
+    font-size: 1.3rem;
+}
+
+.btn {
+    display: inline-block;
+    padding: .8rem 2rem;
+    background-color: #04AA6D;
+    color: #fff;
+    text-align: center;
+    transition: .4s;
+    font-family: 'Raleway', sans-serif;
+}
+
+.btn:hover {
+    background-color: #1d8351;
+}
+
+section {
+    padding: 100px;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 4.5rem;
+    background-color: transparent;
+    z-index: 100;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+    padding: 0 100px;
+}
+
+.nav_logo {
+    font-family: 'Raleway', sans-serif;
+    color: #fff;
+}
+
+.nav_list {
+    display: flex;
+    align-items: center;
+    column-gap: 4rem;
+}
+
+.nav_link {
+    font-family: 'Open Sans', sans-serif;
+    color: #fff;
+}
+
+.nav_toggle,
+.nav_close {
+    display: none;
+}
+
+.scroll-header {
+    background-color: #fff;
+}
+
+
+/* home */
+
+.home {
+    position: relative;
+    height: 100vh;
+    background-image: url('../img/bg.jpg');
+    background-size: cover;
+    background-position: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 4.5rem 100px;
+    align-items: center;
+}
+
+.home-info h1 {
+    color: #fff;
+}
+
+.home-info h4 {
+    color: #fff;
+    margin-bottom: 1rem;
+}
+
+.have_interest {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}
+
+.have_interest_card {
+    background: #fff;
+    padding: 2rem;
+    border-radius: .5rem;
+}
+
+.have_interest_card h2 {
+    margin-bottom: 1rem;
+}
+
+.check-box {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background: #D9EEE1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 1rem;
+}
+
+.check-box i {
+    color: #000;
+}
+
+.have-interest-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: .5rem;
+}
+
+.have_interest_card .btn {
+    width: 100%;
+    margin-top: 1rem;
+    margin-bottom: .5rem;
+}
+
+.smaller-text {
+    font-size: .8rem;
+}
+
+
+/* how it works */
+
+
+/* services */
+
+.services {
+    background: #F3F3F3;
+}
+
+.services h2,
+.services h5 {
+    text-align: center;
+}
+
+.service_container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 20px;
+}
+
+.service {
+    background: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px 15px;
+}
+
+.service p {
+    text-align: center;
+    font-size: .9rem;
+}
+
+.service a {
+    text-transform: initial;
+    letter-spacing: 0;
+    margin-top: .5rem;
+    font-weight: 400;
+    font-size: 1.1rem;
+    color: #04AA6D;
+    transition: .5s;
+    cursor: pointer;
+}
+
+.service a:hover {
+    color: #1d8351;
+    letter-spacing: .1rem;
+}
+
+.service h6 {
+    margin: 1rem 0 .5rem;
+    font-weight: 400;
+    text-align: center;
+}
+
+.service_icon {
+    height: 80px;
+    width: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid #04AA6D;
+    transition: .5s;
+    position: relative;
+}
+
+.service_image {
+    position: absolute;
+    object-fit: cover;
+    width: 80%;
+    height: 80%;
+}
+
+.type2 {
+    z-index: -1;
+    transition: .5s;
+}
+
+.service {
+    transition: .5s;
+}
+
+.service:hover {
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+.service:hover .service_icon {
+    background: #04AA6D;
+}
+
+.service:hover .service_icon .type2 {
+    z-index: 1;
+}
+
+
+/* About us */
+
+
+/* Contact us */
+
+.contact {
+    background-color: #212121;
+    position: relative;
+    overflow: hidden;
+}
+
+.contact h3 {
+    margin-bottom: 1rem;
+    color: #fff;
+}
+
+.contact .content {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 30px;
+}
+
+.who_we_are {
+    color: #909090;
+}
+
+.get_in_touch_field {
+    margin-bottom: .7rem;
+    color: #909090;
+}
+
+.get_in_touch_field i {
+    font-size: 1.2rem;
+    margin-right: 1rem;
+}
+
+.get_in_touch_field a {
+    font-size: 1rem;
+    color: #000;
+    color: #909090;
+}
+
+.social_media {
+    display: flex;
+}
+
+.social_icon {
+    height: 40px;
+    width: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    border: 1px solid #04AA6D;
+    color: #04AA6D;
+    margin-right: 10px;
+    transition: .4s;
+}
+
+.social_icon:hover {
+    color: #fff;
+    background-color: #04AA6D;
+}
+
+.popular_links {
+    display: flex;
+    flex-direction: column;
+}
+
+.popular_links a {
+    margin-bottom: .7rem;
+    color: #909090;
+}
+
+.newsletter_form {
+    display: flex;
+    flex-direction: column;
+}
+
+.newsletter {
+    position: relative;
+    z-index: 10;
+}
+
+.newsletter .text_box {
+    height: 40px;
+    margin-bottom: .5rem;
+    outline: none;
+    border: none;
+    padding: 5px 10px;
+}
+
+.newsletter .btn {
+    outline: none;
+    border: none;
+}
+
+
+/* footer */
+
+footer {
+    padding: 20px 100px;
+    background: #212121;
+    border-top: 1px solid #818080;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: #909090;
+}
+
+footer a {
+    color: #909090;
+}
+
+footer span {
+    color: #fff;
+}
