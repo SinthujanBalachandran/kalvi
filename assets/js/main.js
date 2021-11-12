@@ -40,29 +40,22 @@ function scrollHeader() {
 window.addEventListener('scroll', scrollHeader)
 
 
-// change service image on hover
-// const service = document.querySelector('.service')
+// about button click
+const about_us_btn = document.getElementById('about_us_btn');
+const why_choose_btn = document.getElementById('why_choose_btn');
+const about_para = document.getElementById('about_para');
+const why_choose_para = document.getElementById('why_choose_para');
 
-// function change() {
+why_choose_btn.addEventListener("click", () => {
+    why_choose_para.classList.add("visible_mode");
+    about_para.classList.remove("visible_mode")
+    why_choose_btn.classList.add("btn_bacground")
+    about_us_btn.classList.remove("btn_bacground")
+})
 
-//     const type1 = document.querySelector('.type1')
-//     const type2 = document.querySelector('.type2')
-//     const service_icon = document.querySelector('.service_icon')
-//     type1.classList.add('no_display');
-//     type2.classList.add('display');
-//     service_icon.classList.add('background');
-
-// }
-
-// function noChange() {
-//     const type1 = document.querySelector('.type1')
-//     const type2 = document.querySelector('.type2')
-//     const service_icon = document.querySelector('.service_icon')
-//     type1.classList.remove('no_display');
-//     type2.classList.remove('display');
-//     service_icon.classList.remove('background');
-
-// }
-
-// service.addEventListener('mouseover', change)
-// service.addEventListener('mouseout', noChange)
+about_us_btn.addEventListener("click", () => {
+    why_choose_para.classList.remove("visible_mode");
+    about_para.classList.add("visible_mode")
+    why_choose_btn.classList.remove("btn_bacground")
+    about_us_btn.classList.add("btn_bacground")
+})
