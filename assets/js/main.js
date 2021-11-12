@@ -59,3 +59,39 @@ about_us_btn.addEventListener("click", () => {
     why_choose_btn.classList.remove("btn_bacground")
     about_us_btn.classList.add("btn_bacground")
 })
+
+// how it works buttons
+
+const student_works = document.getElementById("student_works");
+const teacher_works = document.getElementById("teacher_works");
+const parent_works = document.getElementById("parent_works");
+const btn_student = document.getElementById("btn_student");
+const btn_teacher = document.getElementById("btn_teacher");
+const btn_parent = document.getElementById("btn_parent");
+
+
+btn_student.addEventListener("click", () => {
+    student_works.classList.add("visible_mode")
+    teacher_works.classList.remove("visible_mode")
+    parent_works.classList.remove("visible_mode")
+    btn_student.classList.add("btn_bacground")
+    btn_teacher.classList.remove("btn_bacground")
+    btn_parent.classList.remove("btn_bacground")
+})
+
+btn_teacher.addEventListener("click", () => {
+    student_works.classList.remove("visible_mode")
+    teacher_works.classList.add("visible_mode")
+    parent_works.classList.remove("visible_mode")
+    btn_student.classList.remove("btn_bacground")
+    btn_teacher.classList.add("btn_bacground")
+    btn_parent.classList.remove("btn_bacground")
+})
+btn_parent.addEventListener("click", () => {
+    student_works.classList.remove("visible_mode")
+    teacher_works.classList.remove("visible_mode")
+    parent_works.classList.add("visible_mode")
+    btn_student.classList.remove("btn_bacground")
+    btn_teacher.classList.remove("btn_bacground")
+    btn_parent.classList.add("btn_bacground")
+})
