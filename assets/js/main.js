@@ -95,3 +95,21 @@ btn_parent.addEventListener("click", () => {
     btn_teacher.classList.remove("btn_bacground")
     btn_parent.classList.add("btn_bacground")
 })
+
+// swiper
+let swiper = new Swiper(".testimonial_container", {
+    effect: "coverflow",
+    grabCursor: true,
+    centeredSlides: true,
+    slidesPerView: "auto",
+    loop: true,
+    spaceBetween: 32,
+    slideShadows: true,
+    autoplay: {
+        delay: 3500,
+        disableOnInteraction: false,
+    },
+    coverflowEffect: {
+        rotate: 0,
+    },
+})
