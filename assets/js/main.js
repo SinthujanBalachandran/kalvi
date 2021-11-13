@@ -103,13 +103,17 @@ let swiper = new Swiper(".testimonial_container", {
     centeredSlides: true,
     slidesPerView: "auto",
     loop: true,
-    spaceBetween: 32,
-    slideShadows: true,
+
+
     autoplay: {
         delay: 3500,
         disableOnInteraction: false,
     },
     coverflowEffect: {
-        rotate: 0,
+        rotate: 50,
+        stretch: 0,
+        depth: 100,
+        modifier: 1,
+        slideShadows: false,
     },
 })
