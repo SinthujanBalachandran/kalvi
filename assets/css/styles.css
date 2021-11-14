@@ -605,3 +605,32 @@ footer a {
 footer span {
     color: #fff;
 }
+
+
+/* scrollup */
+
+.scrollup {
+    position: fixed;
+    right: 1rem;
+    bottom: -20%;
+    background: #04AA6D;
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: .7;
+    transition: .4s;
+}
+
+.scrollup_icon {
+    color: #fff;
+}
+
+.scrollup:hover {
+    background: #1d8351;
+    opacity: 1;
+}
+
+.show-scroll {
+    bottom: 5rem;
+}
