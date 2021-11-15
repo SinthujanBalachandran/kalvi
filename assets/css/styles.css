@@ -151,6 +151,10 @@ header {
     color: #000;
 }
 
+.active-link {
+    color: #04AA6D;
+}
+
 
 /* home */
 
@@ -634,3 +638,6 @@ footer span {
 .show-scroll {
     bottom: 5rem;
 }
+
+
+/* media query */
