@@ -641,3 +641,47 @@ footer span {
 
 
 /* media query */
+
+@media screen and (max-width: 1070px){
+    .nav_menu{
+        position:fixed;
+        background: #fff;
+        top:0;
+        right: -100%;
+        width: 70%;
+    height: 100%;
+        box-shadow: -1px 0 4px rgba(14, 55, 63, 0.15);
+    padding: 3rem;
+    transition: .4s;
+    }
+    .nav_list {
+        display: flex;
+        flex-direction: column;
+        row-gap: 2.5rem;
+      }
+      .nav_link {
+        color:#000;
+        font-weight: 500;
+        text-transform: uppercase;
+      }
+      .nav_close {display: block;
+        position: absolute;
+        top: .75rem;
+        right: 1rem;
+        font-size: 1.5rem;
+        color: #000;
+        cursor: pointer;
+        z-index: 10;
+      }
+      .nav_toggle{
+          display: block;
+          color:#fff;
+          font-size: 1.2rem;
+          cursor: pointer;
+      }
+      
+      /* show menu */
+.show-menu {
+    right: 0;
+  }
+}
