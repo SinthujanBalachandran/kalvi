@@ -161,7 +161,7 @@ header {
 .home {
     position: relative;
     height: 100vh;
-    background-image: url('../img/bg.jpg');
+    background-image: url('../img/bg2.jpg');
     background-size: cover;
     background-position: center;
     display: grid;

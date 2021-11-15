@@ -155,7 +155,8 @@ const sr = ScrollReveal({
     duration: 2800,
 })
 
-sr.reveal(`.home-info, .find_teacher, .how_it_works, .services, .testimonials, .contact`,{
+sr.reveal(`.home-info, .find_teacher, .have_interest_card,
+ .how_it_works, .services, .testimonials, .contact`,{
     origin: 'top',
     interval:100,
 })
