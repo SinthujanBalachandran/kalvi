@@ -49,15 +49,15 @@ const why_choose_para = document.getElementById('why_choose_para');
 why_choose_btn.addEventListener("click", () => {
     why_choose_para.classList.add("visible_mode");
     about_para.classList.remove("visible_mode")
-    why_choose_btn.classList.add("btn_bacground")
-    about_us_btn.classList.remove("btn_bacground")
+    why_choose_btn.classList.add("btn_background")
+    about_us_btn.classList.remove("btn_background")
 })
 
 about_us_btn.addEventListener("click", () => {
     why_choose_para.classList.remove("visible_mode");
     about_para.classList.add("visible_mode")
-    why_choose_btn.classList.remove("btn_bacground")
-    about_us_btn.classList.add("btn_bacground")
+    why_choose_btn.classList.remove("btn_background")
+    about_us_btn.classList.add("btn_background")
 })
 
 // how it works buttons
@@ -74,26 +74,29 @@ btn_student.addEventListener("click", () => {
     student_works.classList.add("visible_mode")
     teacher_works.classList.remove("visible_mode")
     parent_works.classList.remove("visible_mode")
-    btn_student.classList.add("btn_bacground")
-    btn_teacher.classList.remove("btn_bacground")
-    btn_parent.classList.remove("btn_bacground")
+    btn_student.classList.add("btn_background")
+    btn_teacher.classList.remove("btn_background")
+    btn_parent.classList.remove("btn_background")
 })
+
 
 btn_teacher.addEventListener("click", () => {
     student_works.classList.remove("visible_mode")
     teacher_works.classList.add("visible_mode")
     parent_works.classList.remove("visible_mode")
-    btn_student.classList.remove("btn_bacground")
-    btn_teacher.classList.add("btn_bacground")
-    btn_parent.classList.remove("btn_bacground")
+    btn_student.classList.remove("btn_background")
+    btn_teacher.classList.add("btn_background")
+    btn_parent.classList.remove("btn_background")
 })
+
+
 btn_parent.addEventListener("click", () => {
-    student_works.classList.remove("visible_mode")
-    teacher_works.classList.remove("visible_mode")
-    parent_works.classList.add("visible_mode")
-    btn_student.classList.remove("btn_bacground")
-    btn_teacher.classList.remove("btn_bacground")
-    btn_parent.classList.add("btn_bacground")
+    student_works.classList.remove("visible_mode");
+    teacher_works.classList.remove("visible_mode");
+    parent_works.classList.add("visible_mode");
+    btn_student.classList.remove("btn_background");
+    btn_teacher.classList.remove("btn_background");
+    btn_parent.classList.add("btn_background");
 })
 
 // swiper
@@ -156,16 +159,16 @@ const sr = ScrollReveal({
 })
 
 sr.reveal(`.home-info, .find_teacher, .have_interest_card,
- .how_it_works, .services, .testimonials, .contact`,{
+ .how_it_works, .services, .testimonials, .contact`, {
     origin: 'top',
-    interval:100,
+    interval: 100,
 })
 
-sr.reveal(`.about_img`, {
+sr.reveal(`.about_img, `, {
     origin: 'left',
 })
 
-sr.reveal(`.about_content`, {
+sr.reveal(`.about_content, `, {
     origin: 'right',
     interval: 100,
 })

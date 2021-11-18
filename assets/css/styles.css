@@ -433,7 +433,7 @@ header {
     display: block;
 }
 
-.btn_bacground {
+.btn_background {
     background-color: #04AA6D;
 }
 
@@ -603,11 +603,7 @@ footer {
     color: #909090;
 }
 
-footer a {
-    color: #909090;
-}
-
-footer span {
+.footer_link {
     color: #fff;
 }
 
@@ -764,7 +760,10 @@ footer span {
         padding: 4.5rem 20px;
     }
     footer {
-        padding: 20px 20px;
+        padding: 10px 20px;
+    }
+    footer p {
+        font-size: .8rem;
     }
     .works {
         grid-template-columns: 1fr;
