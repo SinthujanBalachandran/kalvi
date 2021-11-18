@@ -683,7 +683,7 @@ footer {
     .nav_close {
         display: block;
         position: absolute;
-        top: 1.7rem;
+        top: 1.4rem;
         right: 50px;
         font-size: 1.7rem;
         color: #000;
@@ -691,10 +691,20 @@ footer {
         z-index: 10;
     }
     .nav_toggle {
-        display: block;
+        display: flex;
+        align-items: center;
         color: #fff;
         font-size: 1.7rem;
         cursor: pointer;
+    }
+    .vi_app_small_screen {
+        font-size: 1rem;
+        padding: .5rem 1rem;
+        margin-right: 1rem;
+        border-radius: 20px;
+    }
+    .vi_app_main_screen {
+        display: none;
     }
     /* show menu */
     .show-menu {
@@ -759,6 +769,17 @@ footer {
     .home {
         padding: 4.5rem 20px;
     }
+    .home-info {
+        margin-top: 2rem;
+        margin-bottom: 1.5rem;
+    }
+    .have_interest h3 {
+        font-size: 1.2rem;
+        text-align: center;
+    }
+    .about_dark_container {
+        padding: 25px;
+    }
     footer {
         padding: 10px 20px;
     }
@@ -815,5 +836,11 @@ footer {
     }
     footer {
         flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 420px) {
+    .smaller-text br {
+        display: none;
     }
 }

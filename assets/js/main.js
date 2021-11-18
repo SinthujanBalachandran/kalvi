@@ -20,7 +20,7 @@ if (navClose) {
 }
 
 /*==================== REMOVE MENU MOBILE ====================*/
-const navLink = document.querySelectorAll('.nav__link')
+const navLink = document.querySelectorAll('.nav_link')
 
 function linkAction() {
     const navMenu = document.getElementById('nav-menu')
@@ -155,20 +155,17 @@ window.addEventListener('scroll', scrollUp)
 
 const sr = ScrollReveal({
     distance: '60px',
-    duration: 2800,
+    duration: 2000,
 })
 
-sr.reveal(`.home-info, .find_teacher, .have_interest_card,
- .how_it_works, .services, .testimonials, .contact`, {
+sr.reveal(`.home-info, .find_teacher, .have_interest_card, .about_dark_container,
+ .how_it_works,  .services h5, .services h2, .testimonials, .contact`, {
     origin: 'top',
     interval: 100,
 })
 
-sr.reveal(`.about_img, `, {
+sr.reveal(`.about_img, .about_content, .work1, .work2, .work3, .work4, 
+.service1,.service2, .service3,.service4,.service5, .service6,.service7,.service8`, {
     origin: 'left',
-})
-
-sr.reveal(`.about_content, `, {
-    origin: 'right',
-    interval: 100,
+    interval: 100
 })
