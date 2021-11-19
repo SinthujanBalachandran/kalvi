@@ -255,6 +255,21 @@ header {
     color: #fff;
 }
 
+.work .img_box {
+    position: relative;
+    width: 80px;
+    height: 80px;
+}
+
+.work .img_box img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
 .button_group {
     border: 2px solid #04AA6D;
 }
